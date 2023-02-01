@@ -166,7 +166,7 @@ section#newsletter > div > div.content > p {
    font-size: 1rem;
 }
 section#newsletter > form {
-   width: 319px; min-width: 319px;
+   width: 350px; min-width: 350px;
 }
 section#newsletter > form > input {
    padding: 10px 15px;

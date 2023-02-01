@@ -6,10 +6,6 @@ menuResponsive();
 import { inputVerification } from "./inputVerification.js";
 inputVerification();
 
-// ! Cards team
-import { cardsTeam } from "./cardsTeam.js";
-cardsTeam();
-
 // ! Uptade data footer (copy)
 function uptadeFooter() {
    const year = document.querySelector('footer > p > span');
