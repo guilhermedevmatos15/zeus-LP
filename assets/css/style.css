@@ -381,6 +381,12 @@ div.menu.deactivate {
    section#newsletter > div > div.icon > i {
       display: none;
    }
+
+
+   div.menu > nav > ul > li,a {
+      font-size: 1.5rem;
+      color: white;
+   }
 }
 
 @media (max-width: 970px) {
