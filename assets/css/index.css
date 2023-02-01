@@ -47,6 +47,7 @@ button.contact {
 }
 
 button.track {
+   min-width: 250px;
    background-color: var(--color-03);
    color: white;
 }
@@ -58,6 +59,7 @@ button.track:hover {
 }
 
 button.learn {
+   min-width: 136px;
    background-color: transparent;
    color: var(--color-05);
    font-weight: 400;

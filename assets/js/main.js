@@ -3,10 +3,12 @@ import { menuResponsive } from "./menu.js";
 menuResponsive();
 
 // ! Input verification
+import { inputVerification } from "./inputVerification.js";
+inputVerification();
 
-
-// ! Card images
-
+// ! Cards team
+import { cardsTeam } from "./cardsTeam.js";
+cardsTeam();
 
 // ! Uptade data footer (copy)
 function uptadeFooter() {

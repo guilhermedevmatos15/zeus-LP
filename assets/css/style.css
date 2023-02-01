@@ -28,6 +28,7 @@ body {
    background-color: white;
    color: black;
    font-family: var(--font-padrão);
+   overflow-x: hidden;
 }
 
 header {
@@ -135,44 +136,6 @@ section#home > div.image > img {
    border-radius: 50px;
 }
 
-section#features {
-   width: 60%; min-width: 360px; max-width: 960px;
-   height: auto;
-   margin: auto;
-   padding: 50px;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   gap: 20px;
-}
-section#features > h2 {
-   font-size: 2.5rem;
-   color: var(--color-05);
-}
-section#features > p {
-   font-size: 1.1rem;
-}
-section#features > div.checks {
-   padding: 10px;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   gap: 5px;
-}
-section#features > div.checks > p {
-   width: 100%;
-}
-section#features > div.checks > p > i {
-   color: green;
-   font-size: 1.1rem;
-   margin-right: 5px;
-}
-
-
 section#newsletter {
    margin-top: 50px;
    width: 100%;
@@ -202,6 +165,9 @@ section#newsletter > div > div.content > h2 {
 section#newsletter > div > div.content > p {
    font-size: 1rem;
 }
+section#newsletter > form {
+   width: 319px; min-width: 319px;
+}
 section#newsletter > form > input {
    padding: 10px 15px;
    border: none;
@@ -218,7 +184,58 @@ section#newsletter > form > input.success {
    border: 2px solid green;
 }
 
-section#team {
+
+section#features {
+   width: 60%; min-width: 360px; max-width: 960px;
+   height: auto;
+   margin: auto;
+   padding: 50px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+}
+section#features > h2 {
+   font-size: 2.5rem;
+   color: var(--color-05);
+   line-height: 3.2rem;
+}
+section#features > p {
+   font-size: 1.1rem;
+}
+section#features > div.checks {
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 5px;
+}
+section#features > div.checks > p {
+   width: 100%;
+}
+section#features > div.checks > p > i {
+   color: green;
+   font-size: 1.1rem;
+   margin-right: 5px;
+}
+
+footer {
+   margin: 30px auto 0 auto;
+   padding-bottom: 10px;
+   width: 100%;
+   text-align: center;
+}
+footer > p {
+   padding: 5px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+/* section#team {
    margin: 30px auto 0 auto;
    padding: 20px;
    display: flex;
@@ -278,24 +295,20 @@ section#team > div > div.cards > div.card > h3 {
 section#team > div > div.cards > div.card > p.office {
    font-size: 1.04rem;
    font-weight: 400;
-}
+} */
 
 /* ? Manipulação com JS */
-section#team > div > div.cards > #card2, #card3, #card4 {
+/* section#team > div > div.cards > #card2, #card3, #card4 {
    display: none;
-}
+} */
 
-footer {
-   margin: 30px auto 0 auto;
-   padding-bottom: 10px;
-   width: 100%;
-   text-align: center;
-}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
 
 
 
 /* ! Parte responsiva */
-
 i.fa-bars, i.fa-xmark {
    display: none;
 }
@@ -342,6 +355,7 @@ div.menu.deactivate {
    right: -100%;
    transition: all .3s;
 }
+
 /* ? Media queries */
 @media (max-width: 1050px) {
    header > nav > ul, header > nav > button {
@@ -359,5 +373,66 @@ div.menu.deactivate {
    }
    header > nav > i.fa-bars {
       display: inline;
+   }
+
+   section#newsletter > div {
+      gap: 0;
+   }
+   section#newsletter > div > div.icon > i {
+      display: none;
+   }
+}
+
+@media (max-width: 970px) {
+   section#home > div.image {
+      display: none;
+   }
+   section#home > div.content {
+      margin-top: 20px;
+      width: 90%;
+      text-align: center;
+      padding: 0;
+   }
+   section#home > div.content > h1 {
+      text-align: center;
+   }
+   section#home > div.content > div.buttons {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 855px) {
+   section#newsletter {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+   }
+}
+
+@media (max-width: 770px) {
+   section#features {
+      width: 90%;
+   }
+}
+
+@media (max-width: 474px) {
+   section#home {
+      padding: 50px 10px;
+   }
+   section#home > div.content > div.buttons {
+      flex-direction: column;
+   }
+   section#home > div.content > div.buttons > button.learn {
+      min-width: 250px;
+   }
+   section#features {
+      width: 100%;
+      padding: 50px 20px;
+   }
+}
+
+@media (max-width: 400px) {
+   :root {
+      font-size: 14px;
    }
 }
