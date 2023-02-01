@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="assets/css/index.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   <script src="https://kit.fontawesome.com/401b17d60b.js" crossorigin="anonymous"></script>
    <title>Landing Page</title>
 </head>
 <body>
@@ -21,7 +22,8 @@
          <button class="contact">Contact Us</button>
       </nav>
    </header>
-   <section class="home">
+
+   <section id="home">
       <div class="content">
          <h1>Take care of your performance every day.</h1>
          <p>Build a well-presented brand that everyone will love. Take care to develop resources continually and integrity them with previous projects.</p>
@@ -35,52 +37,72 @@
       </div>
    </section>
 
-   <section class="features">
+   <section id="features">
       <h2>Expand your brand</h2>
       <p>If you have ever wondered how to develop your brand, this is the place for you. Take a big step forward in growing your business with this great tool.</p>
       <div class="checks">
-         <p><i class="fa-solid fa-badge-check"></i> Quick problem-solving contact</p>
-         <p><i class="fa-solid fa-badge-check"></i> Making changes simple and easy</p>
-         <p><i class="fa-solid fa-badge-check"></i> Exchangeable at any time</p>
+         <p><i class="fa-solid fa-check"></i> Quick problem-solving contact</p>
+         <p><i class="fa-solid fa-check"></i> Making changes simple and easy</p>
+         <p><i class="fa-solid fa-check"></i> Exchangeable at any time</p>
       </div>
       <button class="activate">Activate Demo</button>
    </section>
 
-   <section class="sign-up-newsletter">
+   <section id="newsletter">
       <div>
          <div class="icon">
-            <i class="fa-solid fa-circle-envelope"></i>
+            <i class="fa-solid fa-envelope"></i>
          </div>
-         <div>
+         <div class="content">
             <h2>Sign up to our <strong>newsletter</strong></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
       </div>
       <form>
-         <input type="email" id="email" name="email" placeholder="Inform your email">
+         <input class="" type="email" id="email" name="email" placeholder="Inform your email">
          <button class="sign-up">Sign up</button>
       </form>
    </section>
 
-   <section class="team">
+   <section id="team">
       <h2>Meet our highly qualified team</h2>
       <div>
          <i class="fa-solid fa-circle-arrow-left"></i>
          <div class="cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card" id="card1">
+               <img src="assets/images/offices/vitor.jpg" alt="office people">
+               <h3>Vitor</h3>
+               <p class="office">CEO</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil ratione, assumenda ipsam libero iur</p>
+            </div>
+            <div class="card" id="card2">
+               <img src="assets/images/offices/mark.jpg" alt="office people">
+               <h3>Mark</h3>
+               <p class="office">Developer</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil ratione, assumenda ipsam libero iur</p>
+            </div>
+            <div class="card" id="card3">
+               <img src="assets/images/offices/carla.jpg" alt="office people">
+               <h3>Carla</h3>
+               <p class="office">Developer</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil ratione, assumenda ipsam libero iur</p>
+            </div>
+            <div class="card" id="card4">
+               <img src="assets/images/offices/robson.jpg" alt="office people">
+               <h3>Robson</h3>
+               <p class="office">SEO Developer</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil ratione, assumenda ipsam libero iur</p>
+            </div>
          </div>
          <i class="fa-solid fa-circle-arrow-right"></i>
       </div>
    </section>
 
    <footer>
-      <p>All rights reserved &copy; Zeus Corporation <span class="year">JAVASCRIPT</span></p>
+      <p>All rights reserved &copy; Zeus Corporation <span class="year"></span></p>
    </footer>
 
-   <script src="https://kit.fontawesome.com/401b17d60b.js" crossorigin="anonymous"></script> <!-- Font awessome (icons) -->
+
    <script src="assets/js/main.js"></script>
 </body>
 </html>

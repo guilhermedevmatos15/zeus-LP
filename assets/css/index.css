@@ -20,13 +20,14 @@
    box-sizing: border-box;
 }
 
+/* ! Configs padrões de elementos */
 button {
    padding: 10px 20px;
    font-family: var(--font-padrão);
    font-weight: 600;
    font-size: 1rem;
    border: none;
-   border-radius: 15px;
+   border-radius: 10px;
    cursor: pointer;
    transition: all .3s;
    transform: scale(100%);
@@ -38,10 +39,13 @@ button:hover {
 }
 
 
+
+/* ! Configs separadas */
 button.contact {
    background-color: var(--color-02);
    color: var(--color-03);
 }
+
 button.track {
    background-color: var(--color-03);
    color: white;
@@ -52,9 +56,23 @@ button.track:hover {
    color: var(--color-03);
    transform: scale(101%);
 }
+
 button.learn {
    background-color: transparent;
    color: var(--color-05);
+   font-weight: 400;
    border: 1px solid var(--color-05);
-   font-weight: 500;
+}
+
+button.activate, button.sign-up {
+   background-color: var(--color-03);
+   color: white;
+   font-weight: 400;
+}
+button.activate:hover button.sign-up:hover {
+   background-color: #b33972;
+}
+
+button.sign-up {
+   padding: 10px 15px;
 }

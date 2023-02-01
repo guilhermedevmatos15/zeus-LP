@@ -92,39 +92,38 @@ header > nav > ul > li:hover,a:hover {
    text-decoration: underline;
 }
 
-section.home {
+section#home {
    margin: 70px auto 0 auto;
-   width: 100%;
-   max-width: 1400px;
+   width: 100%; max-width: 1400px;
    height: auto;
    padding: 50px;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-section.home > div.content {
+section#home > div.content {
    width: 60%;
    height: 100%;
    padding: 0 20px 0 0;
 }
-section.home > div.content > h1 {
+section#home > div.content > h1 {
    font-size: 3rem;
    line-height: 3.5rem;
    color: var(--color-05);
    text-align: left;
 }
-section.home > div.content > p {
+section#home > div.content > p {
    margin-top: 20px;
    font-size: 1rem;
 }
-section.home > div.content > div.buttons {
+section#home > div.content > div.buttons {
    margin-top: 30px;
    display: flex;
    justify-content: flex-start;
    align-items: center;
    gap: 10px;
 }
-section.home > div.image {
+section#home > div.image {
    width: 40%;
    height: 100%;
    overflow: hidden;
@@ -132,14 +131,12 @@ section.home > div.image {
    justify-content: center;
    align-items: center;
 }
-section.home > div.image > img {
+section#home > div.image > img {
    border-radius: 50px;
 }
 
-section.features {
-   width: 60%;
-   max-width: 960px;
-   min-width: 360px;
+section#features {
+   width: 60%; min-width: 360px; max-width: 960px;
    height: auto;
    margin: auto;
    padding: 50px;
@@ -150,16 +147,148 @@ section.features {
    align-items: center;
    gap: 20px;
 }
-section.features > h2 {
+section#features > h2 {
+   font-size: 2.5rem;
+   color: var(--color-05);
+}
+section#features > p {
+   font-size: 1.1rem;
+}
+section#features > div.checks {
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 5px;
+}
+section#features > div.checks > p {
+   width: 100%;
+}
+section#features > div.checks > p > i {
+   color: green;
+   font-size: 1.1rem;
+   margin-right: 5px;
+}
+
+
+section#newsletter {
+   margin-top: 50px;
+   width: 100%;
+   height: auto;
+   padding: 30px;
+   background-color: var(--color-04);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 80px;
+}
+section#newsletter > div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+section#newsletter > div > div.icon > i {
+   font-size: 3.5rem;
+   color: white;
+}
+section#newsletter > div > div.content > h2 {
+   color: white;
+   font-size: 1.7rem;
+}
+section#newsletter > div > div.content > p {
+   font-size: 1rem;
+}
+section#newsletter > form > input {
+   padding: 10px 15px;
+   border: none;
+   font-size: 1rem;
+   background-color: white;
+   border-radius: 10px;
+}
+
+/* ? Manipulação com JS */
+section#newsletter > form > input.error {
+   border: 2px solid red;
+}
+section#newsletter > form > input.success {
+   border: 2px solid green;
+}
+
+section#team {
+   margin: 30px auto 0 auto;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+section#team > h2 {
    font-size: 2.2rem;
    color: var(--color-05);
 }
-section.features > p {
-   font-size: 1rem;
+section#team > div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
 }
-section.features > div.checks > i {
-   width: 50px;
-   height: 50px;
-   color: black;
-   font-size: 1rem;
+section#team > div > i {
+   color: var(--color-03);
+   font-size: 1.7rem;
+   cursor: pointer;
+   transition: all .3s;
+}
+section#team > div > i:hover {
+   cursor: pointer;
+   transition: all .3s;
+   color: #ce508b;
+   transform: scale(101%);
+}
+section#team > div > div.cards {
+   width: 500px;
+   height: 300px;
+   background-color: transparent;
+   border: 1px solid var(--color-05);
+   border-radius: 20px;
+   overflow: hidden;
+}
+section#team > div > div.cards > div.card {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+section#team > div > div.cards > div.card > img {
+   width: 150px;
+   border-radius: 20px;
+}
+section#team > div > div.cards > div.card > h3 {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+section#team > div > div.cards > div.card > p.office {
+   font-size: 1.04rem;
+   font-weight: 400;
+}
+
+/* ? Manipulação com JS */
+section#team > div > div.cards > #card2, #card3, #card4 {
+   display: none;
+}
+
+
+footer {
+   margin: 30px auto 0 auto;
+   padding-bottom: 10px;
+   width: 100%;
+   text-align: center;
 }
