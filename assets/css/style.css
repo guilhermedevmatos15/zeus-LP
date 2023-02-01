@@ -285,10 +285,79 @@ section#team > div > div.cards > #card2, #card3, #card4 {
    display: none;
 }
 
-
 footer {
    margin: 30px auto 0 auto;
    padding-bottom: 10px;
    width: 100%;
    text-align: center;
+}
+
+
+
+/* ! Parte responsiva */
+
+i.fa-bars, i.fa-xmark {
+   display: none;
+}
+
+div.menu {
+   width: 50%; min-width: 300px;
+   height: 100vh;
+   background-color: var(--color-04);
+   color: white;
+   border-radius: 20px;
+   position: fixed;
+   top: 70px;
+   right: 0;
+   z-index: 4;
+   transition: all .3s;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+div.menu > nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+div.menu > nav > button {
+   display: block;
+   margin: auto;
+   font-size: 1.1rem;
+}
+div.menu > nav > ul {
+   list-style: none;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+div.menu.deactivate {
+   right: -100%;
+   transition: all .3s;
+}
+/* ? Media queries */
+@media (max-width: 1050px) {
+   header > nav > ul, header > nav > button {
+      display: none;
+   }
+   header > nav > i.fa-bars, i.fa-xmark {
+      color: black;
+      font-size: 1.7rem;
+      cursor: pointer;
+      transition: all .3s;
+   }
+   header > nav > i.fa-bars:hover, i.fa-xmark:hover {
+      transition: all .3s;
+      transform: scale(103%);
+   }
+   header > nav > i.fa-bars {
+      display: inline;
+   }
 }

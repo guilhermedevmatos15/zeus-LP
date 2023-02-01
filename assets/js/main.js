@@ -1,5 +1,6 @@
-// ! Menu hamburguer
-
+// ! Menu reponsive
+import { menuResponsive } from "./menu.js";
+menuResponsive();
 
 // ! Input verification
 
